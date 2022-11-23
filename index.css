@@ -1,6 +1,24 @@
+/*CSS Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica Neue", sans-serif;
+	background-color: black;
+}
+
+
 #navbar {
 	background-color: black;
 }
 #navbarNav {
 	float: right;
+}
+
+* {
+	margin: 0;
+
 }
