@@ -14,8 +14,8 @@
 </head>
 <body>
 	<!-- Navbar Start -->
-	<div class="sticky-top navbar navbar-expand-lg navbar-dark text-light p-1 d-flex" id="navbar">
-		<img src="./images/antonvalentynepencil.png" width="40" height="40" class="d-inline-block align-top">
+	<div class="sticky-top navbar navbar-expand-lg navbar-dark text-light p-0 d-flex" id="navbar">
+		<img src="./images/antonvalentynepencil.png" width="35" height="35" class="d-inline-block align-top">
 	    <div class="p-3 d-flex mr-auto">ANTON BORINES</div>			
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
                     <a class="nav-link" href="https://antonvalentyne.com/blog/" target="_blank">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -36,15 +36,15 @@
     <!-- Main Content Start -->
 
     <!-- Profile Start -->
-    <div class="offset-md-2 col-md-8 container bg-none text-white text-center p-3 d-flex">
-        <div class="p-none mr-auto text-justify bg-none rounded">
+    <div class="offset-md-2 col-md-8 container bg-none text-white text-center p-3 d-flex flex-column flex-lg-row">
+        <div class="p-none mr-auto text-center bg-none rounded order-2 order-lg-1">
             <h1 class="display-4 pt-5 pb-3 pl-5 pr-5">Hello, world!</h1>
-            <p class="lead w-75 pl-5 pt-none pr-5 pb-2">My name is Anton. I'm a content-creator and web developer. Check out my work, read my stories on the side, watch my videos, or simply read my thoughts by reading my blog. I'm sure there's something I can offer worth your while. Feel free to reach out. I'd love to connect with you.</p>
+            <p class="lead w-100 pl-5 pt-none pr-5 pb-2 text-justify">My name is Anton. I'm a content-creator and web developer. Check out my work, read my stories on the side, watch my videos, or simply read my thoughts by reading my blog. I'm sure there's something I can offer worth your while. Feel free to reach out. I'd love to connect with you.</p>
             <a class="mt-2 ml-5 btn btn-outline-light text-white btn-lg" href="#" role="button">Learn more</a>
             </p>    
         </div>
-        <div class="p-none">
-            <img src="./images/profilepic.jpg" class="rounded img-fluid">
+        <div class="pt-5 order-1 order-lg-2">
+            <img src="./images/profilepic.jpg" class="img-fluid rounded">
         </div>
     </div>
     <!-- Profile End -->
@@ -174,14 +174,46 @@
 </div>
     <!-- Videos End -->
     </div>
- 
-
-   
+    
     <!-- PROJECTS END -->
 
     <!-- Main Content End -->
 
-
+                <!-- Contact Form Section Start -->
+            <div class="m-none bg-none text-center bg-none p-none" id="contact">
+                <h2 class="text-light">Let's Connect...</h2>
+                <div class="row mt-3">
+                    <form class="col-12 offset-md-2 col-md-8 offset-xl-4 col-xl-4 bg-none p-3 rounded">
+                        <div class="form-group">
+                            <label class="text-light" for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Juan Dela Cruz">
+                        </div>
+                        <div class="form-group">
+                            <label class="text-light" for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="text-light" for="contact">Contact Number</label>
+                            <input type="text" class="form-control" id="contact" placeholder="+63 900 000 0000">
+                        </div>
+                        <div>
+                            <label class="text-light" for="concern">Concern</label>
+                            <select class="form-control" id="concern">
+                                <option>--Select--</option>
+                                <option>Quotation</option>
+                                <option>Appointment</option>
+                                <option>Follow-up</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="text-light">Message:</label>
+                            <textarea class="form-control" id="message" rows="7"></textarea>
+                        </div>
+                        <button type="submit" class="pl-5 pr-5 btn btn-outline-dark font-weight-bold" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Contact Form Section End -->
 
      <!-- Bootstrap Javascript Plugin -->
      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

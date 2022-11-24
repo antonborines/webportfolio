@@ -9,6 +9,7 @@ body {
 	font-family: "Helvetica Neue", sans-serif;
 	background-image: url(./images/stars2.jpg);
 	background-repeat: none;
+	background-attachment: fixed;
 	background-color: black;
 	background-size: cover;
 }
